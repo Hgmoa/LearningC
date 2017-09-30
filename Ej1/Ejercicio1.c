@@ -6,10 +6,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void myseq(int first, int increment, int last);
-
 //
-// Funcion que imite a la funcion myseq de unix
+// Programa que imite a la funcion myseq de unix
 //
 int main(int argc, char *args[]) {
     switch (argc) {

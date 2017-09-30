@@ -6,3 +6,7 @@
 #define LEARNING_C_EJERCICIO2_H
 
 #endif //LEARNING_C_EJERCICIO2_H
+
+void printHelp();
+
+void print_inverted(char *string);
