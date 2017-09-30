@@ -35,7 +35,5 @@ void print_inverted(char *string) {
 }
 
 void printHelp() {
-    puts("Use:");
-    puts("invert CHARACTER STRING TO INVERT CONTAINING SPACES");
-    
+    fprintf(stderr, "Use: invert CHARACTER STRING TO INVERT CONTAINING SPACES");
 }

@@ -6,3 +6,7 @@
 #define LEARNING_C_EJERCICIO_3_H
 
 #endif //LEARNING_C_EJERCICIO_3_H
+
+void printHelp();
+
+void mycd(char *ruta);

@@ -44,8 +44,8 @@ void myseq(int first, int increment, int last) {
 }
 
 void printHelp() {
-    puts("Use:");
-    puts("myseq LAST");
-    puts("myseq FIRST LAST");
-    puts("myseq FIRST INCREMENT LAST");
+    fprintf(stderr, "Use:\n");
+    fprintf(stderr, "myseq LAST\n");
+    fprintf(stderr, "myseq FIRST LAST\n");
+    fprintf(stderr, "myseq FIRST INCREMENT LAST\n");
 }
