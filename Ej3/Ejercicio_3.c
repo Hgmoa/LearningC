@@ -9,6 +9,9 @@
 #include <stdlib.h>
 #include "Ejercicio_3.h"
 
+//
+// Programa mycd, funciona imitando funcionalidades del comando cd de unix
+//
 int main(int argc, char *argv[]) {
     
     if (argc > 2) {

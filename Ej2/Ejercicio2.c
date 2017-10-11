@@ -28,8 +28,8 @@ int main(int argc, char *argv[]) {
 }
 
 void print_inverted(char *string) {
-    int size = strlen(string);
-    for (int j = size - 1; j >= 0; j--) {
+    size_t size = strlen(string);
+    for (size_t j = size - 1; j >= 0; j--) {
         printf("%c", string[j]);
     }
 }
