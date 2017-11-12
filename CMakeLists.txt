@@ -9,3 +9,6 @@ add_executable(Ejercicio_1 ${SF_Ejercicio_1})
 
 set(SF_Ejercicio_2 Ej2/Ejercicio2.c Ej2/Ejercicio2.h)
 add_executable(Ejercicio_2 ${SF_Ejercicio_2})
+
+set(SF_ElementsGenerator ElementsGenerator/main.c)
+add_executable(ElementsGenerator ${SF_ElementsGenerator})
