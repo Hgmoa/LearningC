@@ -3,10 +3,11 @@
 //
 
 #include <stdio.h>
-#include <zconf.h>
 #include <memory.h>
 #include <errno.h>
 #include <stdlib.h>
+#include <limits.h>
+#include <io.h>
 #include "Ejercicio_3.h"
 
 //
@@ -29,12 +30,12 @@ int main(int argc, char *argv[]) {
 }
 
 void printHelp() {
-	fprintf(stderr, "Use: mycd path");
+    fprintf(stderr, "Use: mycd path");
 }
 
 void mycd(char *ruta) {
-	char *buffer[PATH_MAX];
-	// 0:Success !0:Failure, errno set to error code
-	if (chdir(ruta) == 0) printf("El directorio actual es: %s\n", getcwd(buffer, sizeof(buffer)));
-	else fprintf(stderr, "Error al cambiar de directorio: %s\n", strerror(errno));
+    char *buffer[PATH_MAX];
+    // 0:Success !0:Failure, errno set to error code
+    if (chdir(ruta) == 0) printf("El directorio actual es: %s\n", getcwd(buffer, sizeof(buffer)));
+    else fprintf(stderr, "Error al cambiar de directorio: %s\n", strerror(errno));
 }

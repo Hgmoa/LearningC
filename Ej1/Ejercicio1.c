@@ -6,6 +6,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void myseq(int first, int increment, int last);
+
 //
 // Programa que imite a la funcion myseq de unix
 //
@@ -44,8 +46,8 @@ void myseq(int first, int increment, int last) {
 }
 
 void printHelp() {
-	fprintf(stderr, "Use:\n");
-	fprintf(stderr, "myseq LAST\n");
-	fprintf(stderr, "myseq FIRST LAST\n");
-	fprintf(stderr, "myseq FIRST INCREMENT LAST\n");
+    fprintf(stderr,"Use:\n");
+    fprintf(stderr,"myseq LAST\n");
+    fprintf(stderr,"myseq FIRST LAST\n");
+    fprintf(stderr,"myseq FIRST INCREMENT LAST\n");
 }

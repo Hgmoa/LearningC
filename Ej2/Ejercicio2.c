@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
 		puts("Undefined behaviour");
 		printHelp();
 	}
-    return 0;
+	return 0;
 }
 
 void print_inverted(char *string) {
